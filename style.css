@@ -1,16 +1,43 @@
+/* fonts */
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;700&family=Manrope:wght@700&family=Poppins:wght@500;600;700&family=Roboto:wght@700&display=swap');
 *{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
+/* common CSS */
 body{
     font-family: 'Poppins', sans-serif;
 }
+
 .container{
     max-width: 1200px;
     margin: 0 auto;
     padding: 0 30px;
+}
+.section-title{
+    font-size: 28px;
+    line-height: 70px;
+    color: #3A3A3A;
+    text-align: center;
+    margin-top: 100px;
+}
+.button{
+    outline: 0;
+    width: 196px;
+    height: 41px;
+    border: 0;
+    background-color:#E02C6D;
+    color: white;
+    font-size: 16px;
+    font-weight: 700;
+    border-radius: 44px;
+    cursor: pointer;
+    position: relative;
+    top: 0;
+}
+.button:active{
+    top: 5px;
 }
 nav{
     display: flex;
@@ -39,18 +66,18 @@ nav{
     color:#3A3A3A;
     ;
 }
-.fas fa-search{
+.fa-search{
     width: 24px;
     height: 24px;
 }
-.fas fa-shopping-cart{
+.fa-shopping-cart{
     width: 36px;
     height: 36px;
 }
 .banner{
    
     display: grid;
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: 582px 440px;
     grid-gap: 133px;
 }
 .banner-left{
@@ -59,16 +86,77 @@ nav{
 .banner-left>h1{
     font-size: 52px;
     line-height: 70px;
+    color: #3A3A3A;
+}
+.banner-left p{
+    color:#3A3A3A;
+    line-height: 24px;
+    font-size: 16px;
+    font-weight: 600;
+    margin-bottom: 10px;
+
 }
 .banner-right{
     background-image: url(images/Circle\ design.svg);
     background-repeat: no-repeat;
     margin-top: 181px;
-    background-size: 475px 475px;
+    background-size:contain;
 }
 .banner-right img{
     width: 440px;
     height: 414px
 
 }
+.collection{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+}
+.card{
+    width: 329px;
+    height: 476px;
+    box-shadow: 0 30px 35px rgba(0, 0, 0, 0.5);
+    padding: 5px 5px;
+}
+.product-image{
+    width:300px;
+    height: 256px;
+    border-radius: 5px;
+    margin:5px auto;
+}
+.fa-arrow-right{
+    margin-left: 20px;
+}
+.fa-star, .fa-star-half-alt{
+    color:#fb8200;
+    Width: 11.07px;
+    Height: 10.32px;
+    margin: 3px 2px;
+}
+.product-info{
+    padding-left: 5px;
+}
+.product-name{
+    font-weight: 500;
+    font-size: 28px;
+    line-height: 40px;
+    color: #18191F;
+}
+
+}
+.additional-info{
+    font-family: 'Inter', sans-serif;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 20.02px;
+    color: #787885;
+}
+.rating{
+    font-family: 'Roboto', sans-serif;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 22px;
+    color: #5E6366;
+    margin-left: 5px;
+}
+
     
