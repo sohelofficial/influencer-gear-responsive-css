@@ -110,11 +110,12 @@ nav{
 .collection{
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
+    grid-row-gap: 30px;
 }
 .card{
     width: 329px;
     height: 476px;
-    box-shadow: 0 30px 35px rgba(0, 0, 0, 0.5);
+    box-shadow: 0 10px 5px rgba(0, 0, 0, 0.5);
     padding: 5px 5px;
 }
 .product-image{
