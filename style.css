@@ -111,11 +111,12 @@ nav{
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
     grid-row-gap: 30px;
+    margin-top: 50px;
 }
 .card{
     width: 329px;
     height: 476px;
-    box-shadow: 2px 3px 5px rgba(0, 0, 0, 0.5);
+    box-shadow: 2px 3px 3px rgba(0, 0, 0, 0.1);
     padding: 5px 5px;
 }
 .product-image{
@@ -159,5 +160,27 @@ nav{
     color: #5E6366;
     margin-left: 5px;
 }
+/* -------------------
+see more section
+-------------------- */ 
+.see-more{
+    margin-top: 50px;
+    display: flex;
+    justify-content: right;
+
+}
+.see-more a{
+    text-decoration: none;
+    color: #E02C6D;
+    font-size: 16px;
+    line-height: 24px;
+    font-weight: 700;
+}
+.see-more .fa-arrow-right{
+    margin-left: 5px;
+    width: 16px;
+    height: 14px;
+}
+
 
     
